@@ -1,0 +1,61 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Aprendices</title>
+    
+    <!-- Solo importas tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="{% static 'prueba/css/estilos.css' %}">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <h1 class="mb-4 text-center text-primary">Lista de Aprendices Registrados</h1>
+
+        {% if aprendices %}
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered shadow-sm bg-white">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Documento</th>
+                            <th>Correo</th>
+                            <th>Teléfono</th>
+                            <th>Ficha</th>
+                            <th>Programa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for aprendiz in aprendices %}
+                            <tr>
+                                <td>{{ aprendiz.nombre }}</td>
+                                <td>{{ aprendiz.apellido }}</td>
+                                <td>{{ aprendiz.documento }}</td>
+                                <td>{{ aprendiz.correo }}</td>
+                                <td>{{ aprendiz.telefono }}</td>
+                                <td>{{ aprendiz.ficha }}</td>
+                                <td>
+                                    {% if aprendiz.programa_rel %}
+                                        {{ aprendiz.programa_rel.nombre }}
+                                    {% else %}
+                                        {{ aprendiz.programa }}
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% else %}
+            <div class="alert alert-info text-center" role="alert">
+                No hay aprendices registrados en la base de datos.
+            </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>

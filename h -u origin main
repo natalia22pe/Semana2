@@ -1,0 +1,29 @@
+[33m914539e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Primer commit: models con cardinalidad
+ aprendices/__init__.py                             |   0
+ aprendices/__pycache__/__init__.cpython-313.pyc    | Bin [31m0[m -> [32m139[m bytes
+ aprendices/__pycache__/admin.cpython-313.pyc       | Bin [31m0[m -> [32m602[m bytes
+ aprendices/__pycache__/apps.cpython-313.pyc        | Bin [31m0[m -> [32m450[m bytes
+ aprendices/__pycache__/models.cpython-313.pyc      | Bin [31m0[m -> [32m4842[m bytes
+ aprendices/admin.py                                |   8 [32m++[m
+ aprendices/apps.py                                 |   5 [32m+[m
+ aprendices/migrations/0001_initial.py              |  63 [32m++++++++++[m
+ ..._aprendiz_programa_competencias_competencias.py |  24 [32m++++[m
+ aprendices/migrations/__init__.py                  |   0
+ .../__pycache__/0001_initial.cpython-313.pyc       | Bin [31m0[m -> [32m2805[m bytes
+ ...grama_competencias_competencias.cpython-313.pyc | Bin [31m0[m -> [32m1260[m bytes
+ .../__pycache__/__init__.cpython-313.pyc           | Bin [31m0[m -> [32m150[m bytes
+ aprendices/models.py                               |  74 [32m++++++++++++[m
+ aprendices/tests.py                                |   3 [32m+[m
+ aprendices/views.py                                |   3 [32m+[m
+ aprendiz/__init__.py                               |   0
+ aprendiz/__pycache__/__init__.cpython-313.pyc      | Bin [31m0[m -> [32m137[m bytes
+ aprendiz/__pycache__/settings.cpython-313.pyc      | Bin [31m0[m -> [32m2533[m bytes
+ aprendiz/__pycache__/urls.cpython-313.pyc          | Bin [31m0[m -> [32m1005[m bytes
+ aprendiz/__pycache__/wsgi.cpython-313.pyc          | Bin [31m0[m -> [32m627[m bytes
+ aprendiz/asgi.py                                   |  16 [32m+++[m
+ aprendiz/settings.py                               | 128 [32m+++++++++++++++++++++[m
+ aprendiz/urls.py                                   |  22 [32m++++[m
+ aprendiz/wsgi.py                                   |  16 [32m+++[m
+ db.sqlite3                                         | Bin [31m0[m -> [32m196608[m bytes
+ manage.py                                          |  22 [32m++++[m
+ 27 files changed, 384 insertions(+)
